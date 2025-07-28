@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Challenges Faced by African IT Professionals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="content">
+            <div id="info-box-full">
+                <img src="media/africa.webp" alt="Africa">
+                <h1>CHALLENGES FACED BY AFRICAN IT PROFESSIONALS</h1>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button onclick="toggleSection('workload')">Workload</button>
+                <button onclick="toggleSection('cybersecurity')">Cybersecurity</button>
+                <button onclick="toggleSection('skills-gap')">Skills Gap</button>
+                <button onclick="toggleSection('cloud')">Cloud</button>
+                <button onclick="toggleSection('hiring')">Hiring</button>
+                <button onclick="toggleSection('budget')">Budget</button>
+                <button onclick="toggleSection('digital-transformation')">Digital Transformation</button>
+                <button onclick="toggleSection('career-growth')">Career Growth</button>
+                <button onclick="toggleSection('leadership-support')">Leadership Support</button>
+            </div>
+
+            <!-- Sections -->
+            <div class="section" id="workload">
+                <h2>WORKLOAD</h2>
+                <p>African IT professionals face significant barriers to training, with heavy workloads being the primary challenge.</p>
+                <p>Many decision-makers delay or deprioritize training due to pressing operational demands...</p>
+            </div>
+
+            <div class="section" id="cybersecurity">
+                <h2>Cybersecurity</h2>
+                <p>Cybersecurity is a major challenge for African IT professionals due to increasing cyber threats and a shortage of skilled talent. Many organizations lack the expertise to defend against complex attacks, and hiring or outsourcing cybersecurity professionals is often too costly. This puts both systems and customer trust at risk. The most effective long-term solution is to upskill existing IT staff, building internal cybersecurity capacity that is both sustainable and cost-efficient.</p>
+            </div>
+
+            <div class="section" id="skills-gap">
+                <h2>Skills Gap</h2>
+                <p>Skills gaps are a growing problem for African IT professionals, contributing to increased stress, project delays, and higher costs. Globally, skills gaps have surged by 155% in three years, and employers may lose up to 416 hours and over R22,000 per employee annually due to insufficient skills. Yet, less than 60% of organizations offer formal training. Without immediate investment in continuous, strategic training, these gaps will continue to weaken IT departments. Urgent action and stronger support from management are needed to build the skills required for future success.</p>
+            </div>
+
+            <div class="section" id="cloud">
+                <h2>Cloud computing</h2>
+                <p>Cybersecurity is a major challenge for African IT professionals due to increasing cyber threats and a shortage of skilled talent. Many organizations lack the expertise to defend against complex attacks, and hiring or outsourcing cybersecurity professionals is often too costly. This puts both systems and customer trust at risk. The most effective long-term solution is to upskill existing IT staff, building internal cybersecurity capacity that is both sustainable and cost-efficient .</p>
+            </div>
+
+            <div class="section" id="hiring">
+                <h2>Hiring</h2>
+                <p> Recruiting and retaining IT talent remains a significant challenge for African IT leaders, with 50% struggling and only 7% finding hiring easy. Critical roles like cloud computing and cybersecurity are especially hard to fill. To address this, some organizations are shifting focus from formal degrees to skills and recent certifications, recognizing that practical abilities better reflect a candidate’s readiness.</p>
+            </div>
+
+            <div class="section" id="budget">
+                <h2>Budget</h2>
+                <p> Limited budgets are a major barrier to both training and hiring. IT professionals often find their development requests denied due to financial constraints. To overcome this, IT departments must clearly communicate the business value of ongoing training—such as driving revenue growth and reducing turnover. Cost-saving measures include leveraging prepayments, special offers, and training credits from tech providers to maximize training budgets effectively.</p>
+            </div>
+
+            <div class="section" id="digital-transformation">
+                <h2>Digital Transformation</h2>
+                <p>Digital transformation is reshaping the IT landscape, but African IT professionals are struggling to keep pace. Rapid technological change requires advanced skills in areas like cybersecurity, cloud, and DevOps—yet existing skill gaps and outdated training models are holding teams back. Even when training is available, it's often not enough to match the speed of innovation. As a result, IT departments risk missing business goals and growth opportunities. Continuous, strategic, and prioritized skill development—especially through formal training—is essential to keep up and stay competitive.</p>
+            </div>
+
+            <div class="section" id="career-growth">
+                <h2>Career Growth</h2>
+                <p> Lack of career development is a top reason IT professionals leave their jobs—more important than salary for many. Investing in employee growth is key to retention and long-term success.</p>
+            </div>
+
+            <div class="section" id="leadership-support">
+                <h2>Leadership Support and Skills Development</h2>
+                <p> A lack of leadership buy-in continues to hinder IT training efforts. Even when training is budgeted, 41% of decision-makers still choose not to authorize it. Many IT professionals feel unsupported and undervalued, leading to low morale and high turnover. Poor communication, unclear job roles, and toxic management are key reasons why IT talent leaves—91% of dissatisfied employees are likely to seek new opportunities.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = (section.id === id && section.style.display !== 'block') ? 'block' : 'none';
+            });
+        }
+
+        // Hide all sections initially
+        window.onload = () => {
+            document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+        };
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About This Page</h3>
+                <p>This page highlights the key challenges faced by African IT professionals in areas such as cybersecurity, cloud computing, and digital transformation.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#workload">Workload</a></li>
+                    <li><a href="#cybersecurity">Cybersecurity</a></li>
+                    <li><a href="#skills-gap">Skills Gap</a></li>
+                    <li><a href="#cloud">Cloud & Digital</a></li>
+                    <li><a href="#hiring">Hiring</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Connect</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 African IT Insight | Designed by Shantela</p>
+        </div>
+    </footer>
+</body>
+</html>

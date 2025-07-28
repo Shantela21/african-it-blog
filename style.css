@@ -1,0 +1,367 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: hsl(209, 24%, 47%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+#info-box-full img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #004085;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button-group button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+.section {
+    background: #fff;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group button {
+        width: 90%;
+    }
+}
+
+.section {
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section h2, .section h3, .section h4, .section h5, .section h6 {
+    margin-bottom: 10px;
+    color: #004085;
+}
+
+.toggle-btn {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+}
+
+.tooltip-btn {
+  position: relative;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 220px;
+  background-color: #222;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-btn:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.button-group button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.section {
+  margin-top: 15px;
+  padding: 20px;
+  background: #fefefe;
+  border-left: 4px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.footer {
+  background-color: #002244;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-about, .footer-links, .footer-social {
+  flex: 1 1 250px;
+}
+
+.footer h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer p {
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-social a {
+  margin-right: 12px;
+  font-size: 18px;
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #1da1f2;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about, .footer-links, .footer-social {
+    margin-bottom: 20px;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-btn {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+#info-box-full img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #004085;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button-group button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+.section {
+    background: #fff;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group button {
+        width: 90%;
+    }
+}
